@@ -1,0 +1,9 @@
+altair
+numpy
+pandas
+langchain
+langchain-community
+langchain_experimental
+langchain_openai
+python-dotenv
+streamlit
