@@ -9,7 +9,7 @@ def get_chunker():
     with st.container(border=True):
         split_method = None
         with st.sidebar:
-            split_method = st.selectbox('Split method', ['Character', 'Recursive Character', 'Markdown', 'Semantic', ])
+            split_method = st.selectbox('Split method', ['Character', 'Recursive Character', 'Markdown', 'Semantic'], index=1)
             if split_method == 'Character':
                 return get_character_text_splitter(add_start_index=True)
             elif split_method == 'Markdown':
