@@ -30,7 +30,7 @@ with st.sidebar:
   
 st.session_state["knowledge"] = st.text_area('Enter or copy your text here', value = SAMPLE_TEXT)
     
-if st.session_state["knowledge"]:
+if st.session_state["knowledge"] and text_splitter:
     docs = text_splitter.create_documents([st.session_state["knowledge"]])
 
 if docs:
