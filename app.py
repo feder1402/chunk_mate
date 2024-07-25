@@ -4,6 +4,7 @@ import numpy as np
 from dotenv import load_dotenv
 load_dotenv()
 
+from src.analytics.bar_chart import bar_chart
 from src.analytics.stats import stats
 from src.visualize_chunks import visualize_chunks
 from src.text_splitting import get_chunker
@@ -40,7 +41,9 @@ if docs:
         sizes = [len(doc.page_content) for doc in docs]
         average = np.mean(sizes)
 
-        # bar_chart(sizes, average)
+        with st.sidebar:
+            st.divider()
+            bar_chart(sizes, average)
         stats(docs, st.session_state["knowledge"], sizes, average)
 
     with col[1]:
