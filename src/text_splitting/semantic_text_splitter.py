@@ -5,7 +5,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_experimental.text_splitter import SemanticChunker
 
 def get_semantic_text_splitter(add_start_index):
-    breakpoint_threshold_type = st.selectbox('Breakpoint threshold type', ['percentile', 'standard_deviation', 'interquartile'])
+    breakpoint_threshold_type = st.selectbox('Breakpoint threshold type', ['percentile', 'standard_deviation', 'interquartile', 'gradient'])
    
     embeddings = HuggingFaceEmbeddings()
     return SemanticChunker(

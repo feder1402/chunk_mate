@@ -7,4 +7,4 @@ def stats(docs, knowledge, sizes, average):
     st.metric('Chunks', len(docs), help='Number of chunks created')
     st.metric('Min chunk size', min(sizes), help='Smallest chunk size')
     st.metric('Max chunk size', max(sizes), help='Largest chunk size')
-    st.metric('Average chunk size', int(10*average)/10, help='Total chunks size divided by number of chunks')
+    st.metric('Average chunk size', int(average), help='Total chunks size divided by number of chunks')
