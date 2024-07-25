@@ -35,15 +35,15 @@ if st.session_state["knowledge"] and text_splitter:
     docs = text_splitter.create_documents([st.session_state["knowledge"]])
 
 if docs:
+    sizes = [len(doc.page_content) for doc in docs]
+    average = np.mean(sizes)
+
+    with st.sidebar:
+        bar_chart(sizes, average)
+
     col = st.columns((1, 5), gap='medium')
     with col[0]:
         st.markdown('### Stats')
-        sizes = [len(doc.page_content) for doc in docs]
-        average = np.mean(sizes)
-
-        with st.sidebar:
-            st.divider()
-            bar_chart(sizes, average)
         stats(docs, st.session_state["knowledge"], sizes, average)
 
     with col[1]:
