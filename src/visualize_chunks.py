@@ -9,5 +9,6 @@ def visualize_chunks(chunks):
         ndx = 0
         for chunk in chunks:
             for line in chunk.page_content.split('\n'):
-                st.caption(f':{chunk_colors[ndx]}[{line}]')
+                sanitized_line = line.replace('$', '&#36;') # Escape dollar signs that creates isssues in Markdown
+                st.caption(f':{chunk_colors[ndx]}[{sanitized_line}]')
             ndx += 1
