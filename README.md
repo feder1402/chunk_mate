@@ -49,7 +49,11 @@
 
 1. **Use the Visualization**: Use the histogram to analyze the distribution of chunk sizes for better insights into your text chunking strategy.
 
-### Installing Streamlit Locally
+Use ChunkMate to optimize your text splitting for improved retrieval and generation results.
+
+Happy chunking!
+
+### Installing Locally
 
 1. **Install Python**: Make sure you have Python installed on your machine. You can download Python from the [official website](https://www.python.org/).
 
@@ -77,9 +81,9 @@
 
 ### Deploying to Streamlit Cloud
 
-1. **Create a Streamlit Cloud Account**: Sign up or log in to [Streamlit Cloud](https://share.streamlit.io/).
+1. **Fork this repository**
 
-1. **Fork repository**:
+1. **Create a Streamlit Cloud Account**: Sign up or log in to [Streamlit Cloud](https://share.streamlit.io/).
 
 1. **Link Your GitHub Repository**: Connect your GitHub account to Streamlit Cloud and link the repository that contains your ChunkMate code.
 
@@ -90,10 +94,6 @@
 ## Feedback and Contribution
 
 If you have suggestions or want to contribute to improving ChunkMate, please feel free to open issues or submit pull requests in the repository. User feedback is valuable for enhancing the functionality and user experience of the application.
-
----
-
-Happy chunking with ChunkMate! Optimize your text processing for improved retrieval and generation results.
 
 ## Credits
 Heavily inspired by [Greg Kamradt](https://x.com/GregKamradt)'s [Five levels of text Splitting](https://www.youtube.com/watch?v=8OJC21T2SL4) and accompanying online tool [ChunkViz](https://chunkviz.up.railway.app/).
