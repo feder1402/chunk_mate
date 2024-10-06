@@ -6,6 +6,12 @@
 
 [Online demo (Streamlit Coud)](https://chunkmate.streamlit.app/)
 
+## Use Cases
+
+- **Retrieval Augmented Generation (RAG)**: Optimize chunk sizes for text retrieval and augmentation in NLP models.
+- **Text Processing**: Use the chunking techniques for handling large bodies of text in search, summarization, or indexing tasks.
+- **Experimentation and Tuning**: Test different splitting approaches to find the optimal method for specific text analysis requirements.
+
 ## Features
 
 - **Split Methods**: Users can select from various split methods to create chunks, such as:
@@ -28,63 +34,60 @@
 
 - **Text Input**: Users can input or copy their text directly into the application for chunking and analysis.
 
-## Getting Started
-
-To start using ChunkMate, enter or paste your text into the input field. Then, choose your preferred chunking method from the split options, and adjust the parameters as needed. You can visually inspect the chunks and use the statistics panel to understand how the text is being split.
-
-### Use Cases
-
-- **Retrieval Augmented Generation (RAG)**: Optimize chunk sizes for text retrieval and augmentation in NLP models.
-- **Text Processing**: Use the chunking techniques for handling large bodies of text in search, summarization, or indexing tasks.
-- **Experimentation and Tuning**: Test different splitting approaches to find the optimal method for specific text analysis requirements.
 
 ## Usage
 
-To run ChunkMate locally or deploy it to the Streamlit cloud, you'll need to set up a Streamlit environment.
+### Getting Started
+
+1. Visit [ChunkMate demo on Streamlit Cloud](chunkmate.streamlit.app)
+
+1. **Select your Text to Split**: Use the example text,  enter/paste your own text into the input field
+
+1. **Chose Splitting Method**: Select different splitting methods and options and see how chunks change
+
+1. **Try the Advanced Options**: Customize how the text is separated using delimiters or stripping whitespace to adjust chunk sizes.
+
+1. **Use the Visualization**: Use the histogram to analyze the distribution of chunk sizes for better insights into your text chunking strategy.
 
 ### Installing Streamlit Locally
 
 1. **Install Python**: Make sure you have Python installed on your machine. You can download Python from the [official website](https://www.python.org/).
 
-2. **Set Up a Virtual Environment (optional)**: It is recommended to create a virtual environment for your project.
+1. **Set Up a Virtual Environment (optional)**: It is recommended to create a virtual environment for your project.
    ```bash
    python3 -m venv env
    source env/bin/activate  # On Windows, use `env\Scripts\activate`
    ```
 
-3. **Install Streamlit**: Use `pip` to install Streamlit.
-   ```bash
-   pip install streamlit
-   ```
-4. **Clone repository**:
-```bash
-git clone git@github.com:feder1402/chunk_mate.git
-``` 
+1. **Clone repository**:
+    ```bash
+    git clone git@github.com:feder1402/chunk_mate.git
+    ``` 
 
-5. **Run the Streamlit App**: Navigate to your project directory and run the app using Streamlit.
+1. **Install dependencies**
+    ```bash
+    pip install --upgrade -r requirements.txt
+    ```
+
+1. **Run the Streamlit App**: Navigate to your project directory and run the app using Streamlit.
    ```bash
    streamlit run app.py
    ```
-   Replace `app.py` with the name of your Python script containing the ChunkMate code.
-
-6. **Access the App**: Once the app is running, it will be accessible in your browser at `http://localhost:8501`.
+1. **Access the App**: Once the app is running, it will be accessible in your browser at `http://localhost:8501`.
 
 ### Deploying to Streamlit Cloud
 
 1. **Create a Streamlit Cloud Account**: Sign up or log in to [Streamlit Cloud](https://share.streamlit.io/).
 
-2. **Fork repository**:
+1. **Fork repository**:
 
-3. **Link Your GitHub Repository**: Connect your GitHub account to Streamlit Cloud and link the repository that contains your ChunkMate code.
+1. **Link Your GitHub Repository**: Connect your GitHub account to Streamlit Cloud and link the repository that contains your ChunkMate code.
 
-4. **Deploy the App**: Select the repository and branch where your code resides, and deploy it. Streamlit Cloud will automatically build and serve your application.
+1. **Deploy the App**: Select the repository and branch where your code resides, and deploy it. Streamlit Cloud will automatically build and serve your application.
 
-5. **Access the App Online**: Once deployed, your app will have a live URL provided by Streamlit Cloud, making it easy to share and use from any device.
+1. **Access the App Online**: Once deployed, your app will have a live URL provided by Streamlit Cloud, making it easy to share and use from any device.
 
-## Additional Configuration
 
-- **Advanced Options**: Customize how the text is separated using delimiters or stripping whitespace to adjust chunk sizes.
-- **Visualization**: Use the histogram to analyze the distribution of chunk sizes for better insights into your text chunking strategy.
 
 ## Feedback and Contribution
 
