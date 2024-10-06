@@ -4,7 +4,7 @@
 
 ![ChunkMate Preview](public/chunk_mate.png)
 
-[demo](https://chunkmate.streamlit.app/)
+[Online demo (Streamlit Coud)](https://chunkmate.streamlit.app/)
 
 ## Features
 
@@ -18,6 +18,7 @@
   - **Overlap Size**: Specify overlap between consecutive chunks.
   - **Breakpoint Threshold Type and Amount**: For semantic splitting, control how text is split based on breakpoints like percentiles, standard deviation, interquartile, or gradient.
 
+- **Chunk Visualization**: Chunks are shown in the original text using different colors
 - **Stats and Visual Feedback**: Real-time updates on statistics like:
   - **Total Chunk Size**
   - **Number of Chunks**
