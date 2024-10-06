@@ -1,15 +1,10 @@
-# ChunkMate README
-
-## Overview
+# ChunkMate
 
 **ChunkMate** is an interactive application designed to help users experiment with various chunking techniques for Retrieval Augmented Generation (RAG). It enables users to analyze and split texts into chunks using different splitting methods and adjust parameters to optimize chunk sizes for specific use cases in text processing, retrieval, and natural language generation.
 
 ![ChunkMate Preview](public/chunk_mate.png)
 
-[See the demo](https://chunkmate.streamlit.app/)
-
-## Credits
-Heavily inspired by [Greg Kamradt](https://x.com/GregKamradt)'s [Five levels of text Splitting](https://www.youtube.com/watch?v=8OJC21T2SL4) and accompanying online tool [ChunkViz](https://chunkviz.up.railway.app/).
+[demo](https://chunkmate.streamlit.app/)
 
 ## Features
 
@@ -42,7 +37,7 @@ To start using ChunkMate, enter or paste your text into the input field. Then, c
 - **Text Processing**: Use the chunking techniques for handling large bodies of text in search, summarization, or indexing tasks.
 - **Experimentation and Tuning**: Test different splitting approaches to find the optimal method for specific text analysis requirements.
 
-## Prerequisites
+## Usage
 
 To run ChunkMate locally or deploy it to the Streamlit cloud, you'll need to set up a Streamlit environment.
 
@@ -60,24 +55,30 @@ To run ChunkMate locally or deploy it to the Streamlit cloud, you'll need to set
    ```bash
    pip install streamlit
    ```
+4. **Clone repository**:
+```bash
+git clone git@github.com:feder1402/chunk_mate.git
+``` 
 
-4. **Run the Streamlit App**: Navigate to your project directory and run the app using Streamlit.
+5. **Run the Streamlit App**: Navigate to your project directory and run the app using Streamlit.
    ```bash
    streamlit run app.py
    ```
    Replace `app.py` with the name of your Python script containing the ChunkMate code.
 
-5. **Access the App**: Once the app is running, it will be accessible in your browser at `http://localhost:8501`.
+6. **Access the App**: Once the app is running, it will be accessible in your browser at `http://localhost:8501`.
 
 ### Deploying to Streamlit Cloud
 
 1. **Create a Streamlit Cloud Account**: Sign up or log in to [Streamlit Cloud](https://share.streamlit.io/).
 
-2. **Link Your GitHub Repository**: Connect your GitHub account to Streamlit Cloud and link the repository that contains your ChunkMate code.
+2. **Fork repository**:
 
-3. **Deploy the App**: Select the repository and branch where your code resides, and deploy it. Streamlit Cloud will automatically build and serve your application.
+3. **Link Your GitHub Repository**: Connect your GitHub account to Streamlit Cloud and link the repository that contains your ChunkMate code.
 
-4. **Access the App Online**: Once deployed, your app will have a live URL provided by Streamlit Cloud, making it easy to share and use from any device.
+4. **Deploy the App**: Select the repository and branch where your code resides, and deploy it. Streamlit Cloud will automatically build and serve your application.
+
+5. **Access the App Online**: Once deployed, your app will have a live URL provided by Streamlit Cloud, making it easy to share and use from any device.
 
 ## Additional Configuration
 
@@ -91,5 +92,8 @@ If you have suggestions or want to contribute to improving ChunkMate, please fee
 ---
 
 Happy chunking with ChunkMate! Optimize your text processing for improved retrieval and generation results.
+
+## Credits
+Heavily inspired by [Greg Kamradt](https://x.com/GregKamradt)'s [Five levels of text Splitting](https://www.youtube.com/watch?v=8OJC21T2SL4) and accompanying online tool [ChunkViz](https://chunkviz.up.railway.app/).
 
 ChunkMate was made with [Streamlit](https://streamlit.io/) and [LangChain](https://python.langchain.com).
