@@ -87,8 +87,6 @@
 
 1. **Access the App Online**: Once deployed, your app will have a live URL provided by Streamlit Cloud, making it easy to share and use from any device.
 
-
-
 ## Feedback and Contribution
 
 If you have suggestions or want to contribute to improving ChunkMate, please feel free to open issues or submit pull requests in the repository. User feedback is valuable for enhancing the functionality and user experience of the application.
