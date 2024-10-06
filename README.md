@@ -38,6 +38,7 @@
 ## Usage
 
 ### Getting Started
+Use ChunkMate to optimize your text splitting for improved retrieval and generation results.
 
 1. Visit [ChunkMate demo on Streamlit Cloud](chunkmate.streamlit.app)
 
@@ -48,8 +49,6 @@
 1. **Try the Advanced Options**: Customize how the text is separated using delimiters or stripping whitespace to adjust chunk sizes.
 
 1. **Use the Visualization**: Use the histogram to analyze the distribution of chunk sizes for better insights into your text chunking strategy.
-
-Use ChunkMate to optimize your text splitting for improved retrieval and generation results.
 
 Happy chunking!
 
