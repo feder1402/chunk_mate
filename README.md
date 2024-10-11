@@ -56,20 +56,24 @@ Happy chunking!
 
 1. **Install Python**: Make sure you have Python installed on your machine. You can download Python from the [official website](https://www.python.org/).
 
+1. **Clone repository**:
+    ```bash
+    git clone git@github.com:feder1402/chunk_mate.git
+    ``` 
+1. **Access your local repository**
+    ```bash
+    cd chunk_mate
+    ```
+
 1. **Set Up a Virtual Environment (optional)**: It is recommended to create a virtual environment for your project.
    ```bash
    python3 -m venv env
    source env/bin/activate  # On Windows, use `env\Scripts\activate`
    ```
 
-1. **Clone repository**:
-    ```bash
-    git clone git@github.com:feder1402/chunk_mate.git
-    ``` 
-
 1. **Install dependencies**
     ```bash
-    pip install --upgrade -r requirements.txt
+    pip install -r requirements.txt
     ```
 
 1. **Run the Streamlit App**: Navigate to your project directory and run the app using Streamlit.
@@ -92,7 +96,7 @@ Happy chunking!
 
 ## Feedback and Contribution
 
-If you have suggestions or want to contribute to improving ChunkMate, please feel free to open issues or submit pull requests in the repository. User feedback is valuable for enhancing the functionality and user experience of the application.
+If you have suggestions or want to contribute to improving ChatMate, please feel free to open issues or submit pull requests in the repository. User feedback is valuable for enhancing the functionality and user experience of the application.
 
 ## Credits
 Heavily inspired by [Greg Kamradt](https://x.com/GregKamradt)'s [Five levels of text Splitting](https://www.youtube.com/watch?v=8OJC21T2SL4) and accompanying online tool [ChunkViz](https://chunkviz.up.railway.app/).
