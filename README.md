@@ -2,7 +2,7 @@
 
 **ChunkMate** is an interactive application designed to help users experiment with various chunking techniques for Retrieval Augmented Generation (RAG). It enables users to analyze and split texts into chunks using different splitting methods and adjust parameters to optimize chunk sizes for specific use cases in text processing, retrieval, and natural language generation.
 
-![ChunkMate Preview](public/chunk_mate.png)
+![ChunkMate Preview](docs/chunk_mate.png)
 
 [Online demo (Streamlit Coud)](https://chunkmate.streamlit.app/)
 
